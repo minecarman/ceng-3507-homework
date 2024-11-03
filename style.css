@@ -1,0 +1,180 @@
+* {
+  /* Reset margin and set a specific font-family */
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  /* Set the background color of the body */
+  background-color: #201d30;
+}
+
+header {
+  /* Flex container settings for the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #995cd0;
+}
+
+.header-btn {
+  /* Styling for header buttons */
+  padding: 5px;
+  border-radius: 4px;
+  background: #ec7744;
+  margin: 3px 5px;
+}
+
+.header-btn a {
+  /* Flex container settings for anchor tags in header buttons */
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.header-btn a img {
+  /* Padding for images in header buttons */
+  padding: 4px;
+}
+
+main {
+  /* Flex container settings for the main content */
+  display: flex;
+}
+
+aside {
+  /* Styling for the sidebar */
+  background-color: #8edf5f;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.coin-card {
+  /* Styling for coin cards */
+  background-color: white;
+  text-align: center;
+  padding: 4px;
+  margin: 5px 4px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.coin img {
+  /* Margin for images in coin cards */
+  margin: 5px 5px;
+}
+
+section {
+  /* Styling for the main section */
+  background-color: #5549b7;
+  color: white;
+  flex: 4;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h1 {
+  /* Styling for the section heading */
+  margin: 5px;
+  padding: 10px;
+  background: #000;
+  border-radius: 8px;
+}
+
+.section-item {
+  /* Flex container settings for section items */
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 40px 10px;
+}
+
+.section-item h2 {
+  /* Center text for section item headings */
+  text-align: center;
+}
+
+.section-item p {
+  /* Center text and add padding for section item paragraphs */
+  text-align: center;
+  padding: 5px;
+}
+
+.section-item img {
+  /* Padding for images in section items */
+  padding: 10px;
+}
+
+nav {
+  /* Styling for the navigation bar */
+  background-color: #8edf5f;
+  flex: 1;
+}
+
+.profile {
+  /* Styling for profile sections */
+  margin: 5px;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.profile img {
+  /* Padding for profile images */
+  padding: 5px;
+}
+
+.profile p {
+  /* Center text for profile paragraphs */
+  text-align: center;
+}
+
+.transactions {
+  /* Styling for transactions section */
+  border: 2px black solid;
+  margin: 15px;
+  background: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.transactions li {
+  /* Styling for individual transaction items */
+  border-radius: 8px;
+  margin: 4px;
+  background-color: gainsboro;
+}
+
+footer {
+  /* Styling for the footer */
+  color: #fff;
+  background-color: #201d30;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer li a {
+  /* Styling for links in the footer */
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  /* Responsive design: Adjust layout for small screens */
+  main {
+    flex-direction: column;
+  }
+  .section-item {
+    flex-direction: column;
+  }
+}
